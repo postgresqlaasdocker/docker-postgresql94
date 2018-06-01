@@ -8,9 +8,9 @@ RUN apt-get update && \
 ## Install PostgreSQL 9.4
 RUN DEBIAN_FRONTEND=noninteractive \
     cd /tmp && \
-    wget https://ftp.postgresql.org/pub/source/v9.4.15/postgresql-9.4.15.tar.gz && \
-    tar xfv postgresql-9.4.15.tar.gz && \
-    cd postgresql-9.4.15 && \
+    wget https://ftp.postgresql.org/pub/source/v9.4.16/postgresql-9.4.16.tar.gz && \
+    tar xfv postgresql-9.4.16.tar.gz && \
+    cd postgresql-9.4.16 && \
     apt-get install libssl-dev -y && \
     apt-get install libreadline6 libreadline6-dev && \
     apt-get install libxml2-dev -y && \
