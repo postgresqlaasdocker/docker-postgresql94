@@ -1,5 +1,5 @@
 FROM srinivasachalla/docker-ubuntu
-MAINTAINER Vinayak Jadhav <vinayak.jadhav@sap.com>
+MAINTAINER Gouranga Murari <gouranga.murari@sap.com>
 
 ## Install wget
 RUN apt-get update && \
@@ -8,9 +8,9 @@ RUN apt-get update && \
 ## Install PostgreSQL 9.4
 RUN DEBIAN_FRONTEND=noninteractive \
     cd /tmp && \
-    wget https://ftp.postgresql.org/pub/source/v9.4.19/postgresql-9.4.19.tar.gz && \
-    tar xfv postgresql-9.4.19.tar.gz && \
-    cd postgresql-9.4.19 && \
+    wget https://ftp.postgresql.org/pub/source/v9.4.21/postgresql-9.4.21.tar.gz && \
+    tar xfv postgresql-9.4.21.tar.gz && \
+    cd postgresql-9.4.21 && \
     apt-get install libssl-dev -y && \
     apt-get install libreadline6 libreadline6-dev && \
     apt-get install libxml2-dev -y && \
